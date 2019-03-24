@@ -1,1 +1,15 @@
 // Mixins Here
+.signup-button-style(@font-color: @porcelain; @background: @btn-bg-color;) {
+  background-color: @background;
+  color: @font-color;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 30%;
+
+  &:hover {
+    background-color: @waterloo;
+    color: @porcelain;
+  }
+}

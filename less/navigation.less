@@ -1,1 +1,51 @@
 // Navigation code here
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    color: @nav-font;
+    background-color: @nav-bg;
+  }
+
+  nav a  {
+    font-size: 1.6rem;
+    padding: 2%;
+    margin: auto 0;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: @nav-font;
+
+    &:first-child {
+      text-align: center;
+      order: -1;
+      flex: 1 0 100%;
+      font-size: 3.2rem;
+      padding: 2%
+    }
+  }
+
+  //media queries
+
+header {
+  @media @phone {
+    margin: auto;
+    justify-content: center;
+
+      section {
+         border-radius: 10px;
+         width: 100%;
+         height: auto;
+         margin: 0;
+         border: solid green 1px;
+      }
+
+      img {
+        width: 100%
+        margin: auto;
+      }
+
+  }
+}
