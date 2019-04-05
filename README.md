@@ -34,13 +34,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
-2. Describe what it means to be mobile first vs desktop first.
+  1. Adaptive
+      1. Specific designs are created for different screen sizes.
+      2. Development process takes longer due to implementing many different designs for each screen size.
+      3. High degree of control over most screen sizes, but can easily miss newer ones.
+  2. Responsive
+      1. Detects screen size and content is rearranged via media queries
+      2. Loads quicker due to having only one layout file.
+      3. Requires thorough QA testing to ensure it works on all screens as expected.
+
+2. Describe what it means to be mobile first vs desktop first. 
+
+  1. Mobile first or desktop first development processes are matter of choice. There are many things to consider when choosing which is right for a project. One important thing to consider is how the majority of your users will access your app. Developing a mobile game for example would call for a mobile first approach, while a CRM app would call for a desktop first approach.
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    1. It allows us to set the based/root font size to 10px. This means 1.6rem equals 10px, which makes for easy font size choices. For example 1.6rem = 16px. This technique has wide browser support, allows fonts to scale proportionally, and respects users browser settings for their font sizes.
 
 4. How would you describe preprocessing to someone new to CSS?
+  1.  Preprocessors are a powerful way to write CSS which helps speed up the development process and reduce errors.
+  2. There are many different options available, and they each use a compiler which converts the special preprocessor syntax to regular CSS.
+  3. Preprocessors expand your CSS development options by adding extra syntax and features such as; mixins, nested selectors, and inheritance selectors.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+  1. 5. My favorite preprocessing concept is being able to make reusable components such as headers and footers. I found the parametric mixins and arguments to be less intuitive.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -58,13 +75,13 @@ Follow these steps to set up your project:
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
+
 
 ### Preprocessor Set up
 
